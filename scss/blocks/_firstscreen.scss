@@ -1,0 +1,141 @@
+.firstscreen {
+  text-align: center;
+  min-height: 810px;
+  background-image: linear-gradient(0deg,
+    rgba(47, 50, 98, 0.67),
+    rgba(47, 50, 98, 0.67)),
+    url("../images/bg-main.jpg");
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.firstscreen__inner {
+  padding: 200px 0 120px;
+}
+
+.firstscreen__title {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto 30px;
+}
+
+.firstscreen__text {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto 70px;
+}
+
+.firstscreen__features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.firstscreen-item {
+  display: block;
+  border: 1px solid #fff;
+  border-top: 0;
+  width: 250px;
+  padding: 40px 0;
+  position: relative;
+  margin: 50px 25px;
+}
+
+.firstscreen-item__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  transform: translateY(-50%);
+
+  &::before,
+  &::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    height: 1px;
+    background-color: #fff;
+    top: 50%;
+  }
+
+  &::before {
+    right: 0;
+  }
+
+  &::after {
+    left: 0;
+  }
+}
+
+.firstscreen-item__icon {
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+}
+
+.firstscreen__content_number {
+  font-family: 'Parangon 530C', 'sans-serif';
+  font-size: 48px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.firstscreen__content_text {
+  font-family: 'HelveticaNeueCyr-Roman', 'sans-serif';
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .firstscreen__inner {
+    padding: 150px 0 70px;
+  }
+
+  .firstscreen-item {
+    width: 220px;
+    margin: 50px 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .firstscreen-item {
+    width: 250px;
+    margin: 50px 5px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .firstscreen__title {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto 30px;
+  }
+
+  .firstscreen__content {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto 70px;
+  }
+
+  .firstscreen__inner {
+    padding: 100px 0 60px;
+  }
+
+  .firstscreen-item {
+    width: 280px;
+    margin: 50px 0px;
+  }
+}

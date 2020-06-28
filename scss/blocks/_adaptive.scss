@@ -1,0 +1,53 @@
+
+.adaptive{
+  overflow-x: hidden;
+}
+.adaptive-content__title::before {
+  content: "ADAPTATE";
+}
+
+.adaptive-img{
+  align-items: flex-end;
+  max-width: 660px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 13px;
+    border: 1px solid $icon;
+    right: -154px;
+    bottom: 22px;
+    z-index: 5;
+  }
+
+  & img{
+    border: 2px solid $icon;
+    border-radius: 15px;
+    &:last-child{
+      border-radius: 15px 0 0 15px;
+    }
+  }
+
+  &__1{
+    height: 174px;
+    padding: 26px 0;
+    margin-right: 50px;
+  }
+
+  &__2{
+    height: 344px;
+    padding: 26px 10px;
+    margin-right: 80px;
+  }
+
+  &__3{
+    height: 422px;
+    margin-bottom: 9px;
+    padding: 26px 0 26px 20px;
+    position: relative;
+    margin-right: -125px;
+    
+  }
+}

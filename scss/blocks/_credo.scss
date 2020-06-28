@@ -1,0 +1,217 @@
+.credo{
+  color: #ffffff;
+}
+
+.credo-header{
+  text-align: center;
+  background-image: linear-gradient(0deg,
+    rgba(47, 50, 98, 0.67),
+    rgba(47, 50, 98, 0.67)),
+  url("../images/bg-form.jpg");
+  background-repeat: no-repeat;
+  background-position: center,
+  center;
+  background-size: cover;
+  max-height: 566px;
+
+}
+
+// .credo__inner {}
+
+ .credo-header__title {
+   margin: 0 auto;
+   padding: 120px 0 65px;
+ }
+
+.credo-header__text {
+  margin: 0 auto;
+  padding-bottom: 160px;
+}
+
+.credo-layot{
+  max-width: 660px;
+  margin-top: -45px;
+  // background-image: url(../../images/credo-layot.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+.credo-layot__title{
+  text-align: center;
+  padding: 130px 0 350px;
+  
+}
+
+.credo-layot__block{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -280px;
+}
+
+.credo-item{
+  width: 340px;
+  height: 315px;
+  padding: 70px 30px 30px;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-position: center,
+  center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 30px;
+  &:not(:last-child){
+    margin-right: 18px;
+  }
+}
+
+
+.credo-item1{
+  background-image: linear-gradient(0deg,
+    rgba(79, 79, 79, 0.58),
+    rgba(79, 79, 79, 0.58),
+    ),
+  url("../images/free_04_2502.jpg");
+}
+
+.credo-item2 {
+  background-image: linear-gradient(0deg,
+      rgba(79, 79, 79, 0.58),
+      rgba(79, 79, 79, 0.58),
+      ),
+    url("../images/img_3646_2473.jpg");
+}
+
+.credo-item3 {
+  background-image: linear-gradient(0deg,
+      rgba(79, 79, 79, 0.58),      
+      rgba(79, 79, 79, 0.58),
+      ),
+    url("../images/zakaz_2513.jpg");
+}
+
+.credo-item__title{
+  text-align: center;
+  font-family: 'HelveticaNeueCyr-Bold', 'sans-serif';
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  flex-grow: 1;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 266px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+  }
+
+}
+
+.credo-tasks__arrow:hover{
+  &:hover {
+    animation: anim-arrow .8s;
+  }
+}
+
+.credo-tasks__arrow a img{
+  width: 22px;
+  margin: 10px;
+  
+}
+
+@keyframes anim-arrow{
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(-20px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.credo-tasks__bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  position: relative;
+}
+
+.credo-tasks__price {
+  border: 2.5px solid #fff;
+  padding: 8px 15px;
+}
+
+.credo-item1 .credo-tasks__price{
+  border: 2.5px solid $icon;
+}
+
+.credo-item2 .credo-tasks__price {
+  border: 2.5px solid $active;
+}
+
+.credo-item3 .credo-tasks__price {
+  border: 1px solid #66bf0d;
+}
+
+// .credo-tasks__arrow {}
+
+@media (max-width: 1200px){
+  .credo-layot{
+    max-width: 500px;
+  }
+  
+  .credo-item__title{
+    font-size: 36px;
+  }
+
+  .credo-item__title::after {
+    top: 100px;
+  }
+
+
+}
+@media (max-width: 992px){
+  .credo-layot__title {
+    padding: 130px 0 300px;
+
+  }
+}
+// @media (max-width: 768px) {}
+@media (max-width: 600px) {
+  .credo-layot__title {
+    padding: 130px 0 300px;
+    font-size: 36px;
+  }
+
+  .credo-item{
+    padding: 50px 0 20px;
+  }
+
+  .credo-item:not(:last-child){
+    margin-right: 0;
+  }
+
+  .credo-item__title{
+    font-size: 30px;
+  }
+
+  .credo-item__title::after {
+    top: 80px;
+    width: 240px;
+  }
+
+  .credo-tasks__bottom{
+    padding: 0 10px;
+  }
+}

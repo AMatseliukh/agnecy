@@ -1,0 +1,32 @@
+// .seo {}
+
+// .container {}
+
+// .seo__inner {}
+
+// .seo-content {}
+
+// .seo-content__title {}
+
+// .seo-content__text {}
+
+.seo-content__title::before {
+  content: "BE THE FIRST";
+}
+.seo-img {
+  margin: 0 50px;
+  height: 475px;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  
+  & img{
+    width: 205px;
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+
+
